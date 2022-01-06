@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* html .container {
+  height: 100%;
+}
+
+html, body {
+	height: 100%;
+  display: flex
+	}
+
+a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+main h1 {
+  margin: 18px;
+  color: #084236;
+}
+
+li {
+  list-style: none;
+}
+
+.margin {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.container {
+  min-height: 100%;
+}
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;  
+
+}
+
+.sliderMenu {
+  position: relative;
+  background: var(--green);
+  width: 15.6rem;
+  height: 100vh;
+  transition: width 0.5s ease;
+}
+
+
+.sliderHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.buttonMenu {
+  border: none;
+  background: transparent;
+}
+
+.find {
+  position: relative;
+  margin-top: 2.4rem;
+  
+}
+
+input  {
+  height: 3.125rem;
+  width: 12.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--light-green);
+  transition: all 0.6s ease;
+}
+
+::-webkit-input-placeholder { 
+  font-family: "Poppins" , sans serif;
+  padding-left: 3.1rem; 
+}
+
+.formSearch {
+  height: 1.5rem;
+  width: 13.8rem;
+}
+
+.btn-primary {
+  position: absolute;
+  left:0;
+  top: 0;
+  background: none;
+  border: none;
+  margin : 0.8rem 0.8rem;
+}
+
+.sliderMain {
+  padding-top: 1.25rem;
+  
+}
+
+.sliderMain .menu ul {
+  display:grid;
+  gap: 2.1rem;
+}
+
+.sliderMain .menu ul li a {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;  
+}
+
+.sliderFooter {
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  background: var(--light-green);
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  margin-left: 1.5rem;
+}
+
+.singout {
+  margin-right: 1.5rem;
+}
+
+.info h1 {
+  font-weight: 500;
+  font-size: 0.93rem;
+}
+
+.info p {
+  font-size: 0.7rem;
+}
+
+.buttonMenu {
+  cursor: pointer;
+}
+
+.sliderMenu.active {
+ width: 72px;
+}
+
+.sliderMenu.active .sliderHeader .logo {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sliderMenu.active .find  {
+  left: 0;
+  margin-left: 9px;
+
+}
+.sliderMenu.active .find input {
+  width: 50px;
+  height: 50px;
+}
+
+.sliderMenu.active .sliderMain .menu-title {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sliderMenu.active .avatar {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.sliderMenu.active .info {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.sliderMenu.active .singout {
+  margin-left: 20px;
+}
